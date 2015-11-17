@@ -11,7 +11,7 @@ app.get('/about', middleware.requireAuthentication, function (req, res){
 	res.send("This page is about us!!!!");
 });
 
-app.use(express.static('/Users/jinwooklee/web-server/public/'));
+app.use(express.static('/Users/jinwooklee/web-server/public'));
 //console.log(__dirname);
 
 app.listen(PORT, function () {
